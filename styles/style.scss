@@ -1,0 +1,16 @@
+@import "reset";
+@import "bases";
+
+.qna-question {
+  h2,
+  img {
+    display: inline-block;
+  }
+}
+.attribution {
+  font-size: rem(16px);
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
