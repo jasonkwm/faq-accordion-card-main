@@ -66,12 +66,11 @@ select {
   *,
   *::before,
   *::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    /*
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    */
     scroll-behavior: auto !important;
   }
 }
@@ -103,10 +102,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 main {
-  max-width: 90%;
+  width: 90%;
+  max-width: 37.5rem;
   background-color: white;
   border-radius: 20px;
   margin: 9.375rem auto 0 auto;
@@ -125,14 +127,14 @@ main {
 
 .mobile-illu {
   position: absolute;
-  width: 240px;
+  width: 15rem;
   top: -6.875rem;
   margin: auto;
 }
 
 h1 {
   text-align: center;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 p {
@@ -154,8 +156,24 @@ h2 {
 
 .qna-items {
   margin: auto;
-  padding: 10px 0;
+  padding: 0.625rem 0;
   border-bottom: solid 2px #e7e7e9;
+}
+
+.qna-items:hover h2 {
+  font-weight: 700;
+}
+
+.qna-items:hover img {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+.qna-items:hover .qna-answer {
+  opacity: 1;
+  height: auto;
+  overflow: auto;
+  padding-bottom: 0.625rem;
 }
 
 .qna-question {
@@ -168,7 +186,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
   margin: auto 0;
 }
 
@@ -177,17 +195,33 @@ h2 {
   display: inline-block;
 }
 
+.qna-question img {
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+  padding: 0.3125rem;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
 .qna-answer {
-  padding-bottom: 10px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .attribution {
   font-size: 0.75rem;
   text-align: center;
-  margin: 1.875rem 0;
+  margin: 1.5625rem auto;
+  color: #1d1e35;
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #f47c57;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
