@@ -54,7 +54,8 @@ h2 {
   margin: auto;
   padding: rem(10px) 0;
   border-bottom: solid 2px $divider-light-grayish-blue;
-  &:hover {
+  &:hover,
+  &:active {
     h2 {
       font-weight: $fw-2;
     }
