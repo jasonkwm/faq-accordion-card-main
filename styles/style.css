@@ -259,6 +259,7 @@ h2 {
             flex-direction: row;
     width: 55.625rem;
     max-width: 55.625rem;
+    margin-top: 1.5625rem;
     background-image: url(../images/bg-pattern-desktop.svg);
     background-position: 750% 70%;
     background-repeat: no-repeat;
