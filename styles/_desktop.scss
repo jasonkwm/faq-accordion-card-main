@@ -1,0 +1,52 @@
+@media only screen and (min-width: 950px) {
+  main {
+    flex-direction: row;
+    width: rem(890px);
+    max-width: rem(890px);
+
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position: 750% 70%;
+    background-repeat: no-repeat;
+  }
+  .illu-div {
+    overflow: hidden;
+  }
+
+  .desktop-art {
+    display: unset;
+  }
+
+  .desktop-illu {
+    position: relative;
+    left: -15%;
+    bottom: 20%;
+  }
+  .desktop-box {
+    position: absolute;
+    top: 40%;
+    left: -10%;
+    overflow: visible;
+  }
+  .desktop-bg {
+    display: none;
+    position: relative;
+  }
+
+  .mobile-art {
+    display: none;
+  }
+  h1 {
+    text-align: left;
+  }
+  .qna-container {
+    margin: 0;
+    padding: rem(50px) rem(80px) rem(80px) 0;
+    max-width: rem(400px);
+  }
+  .qna-question {
+    margin: auto;
+  }
+  .qna-items {
+    margin: unset;
+  }
+}

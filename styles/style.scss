@@ -24,6 +24,10 @@ main {
   align-items: center;
 }
 
+.desktop-art {
+  display: none;
+}
+
 .mobile-illu {
   position: absolute;
   width: rem(240px);
@@ -32,7 +36,7 @@ main {
 }
 h1 {
   text-align: center;
-  margin: rem(20px) 0;
+  margin: rem(30px) 0;
 }
 
 p {
@@ -54,21 +58,7 @@ h2 {
   margin: auto;
   padding: rem(10px) 0;
   border-bottom: solid 2px $divider-light-grayish-blue;
-  &:hover,
-  &:active {
-    h2 {
-      font-weight: $fw-2;
-    }
-    img {
-      transform: scaleY(-1);
-    }
-    .qna-answer {
-      opacity: 1;
-      height: auto;
-      overflow: auto;
-      padding-bottom: rem(10px);
-    }
-  }
+  max-width: 400px;
 }
 
 .qna-question {
@@ -104,3 +94,6 @@ h2 {
   color: $text-soft-red;
   font-weight: $fw-2;
 }
+
+@import "effect";
+@import "desktop";

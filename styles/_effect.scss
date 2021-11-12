@@ -1,0 +1,33 @@
+.hover-event {
+  cursor: pointer;
+  &:hover {
+    h2 {
+      color: $text-soft-red;
+      font-weight: $fw-2;
+    }
+    img {
+      transform: scaleY(1);
+    }
+    .qna-answer {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      padding: unset;
+    }
+  }
+}
+
+.dropdown {
+  h2 {
+    font-weight: $fw-2;
+  }
+  img {
+    transform: scaleY(-1);
+  }
+  .qna-answer {
+    opacity: 1;
+    height: auto;
+    overflow: auto;
+    padding-bottom: rem(10px);
+  }
+}
