@@ -15,3 +15,15 @@ I've decided to complete this mini-project using HTML & SCSS.
 
 - Solution URL: [Code on Github](https://github.com/jasonkwm/faq-accordion-card-main)
 - Live Site URL: [Live site on vercel](https://faq-accordion-card-main-one-coral.vercel.app/)
+
+## My Process
+
+### Build with
+- HTML 
+- SASS
+- Javascript
+- No Figma/Sketch files
+
+### What I learn
+- Javascript
+- Basic Dom Manipulation
