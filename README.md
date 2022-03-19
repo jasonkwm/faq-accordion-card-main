@@ -1,4 +1,4 @@
-# Frontend Mentor - Order summary card solution
+# Frontend Mentor - Faq Accordion Card 
 
 ![My solution for this challenge](./design/desktop-preview.jpg)
 
